@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0"
+      prefWidth="732.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8.0.171"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutController">
+    <children>
+        <HBox fillHeight="false" prefHeight="97.0" prefWidth="732.0" spacing="2.0">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <children>
+                <ImageView fitHeight="36.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/back.png"/>
+                    </image>
+                </ImageView>
+                <Button fx:id="btnHome" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="42.0"
+                        prefWidth="68.0" style="-fx-background-color: #fff;" text="HOME">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+        <HBox alignment="TOP_RIGHT" prefHeight="21.0" prefWidth="732.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="17.0" prefWidth="765.0" text="Library System Management"
+                       textFill="#171717">
+                    <font>
+                        <Font name="Century Gothic" size="20.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox prefHeight="97.0" prefWidth="732.0">
+            <children>
+                <VBox alignment="CENTER" prefHeight="97.0" prefWidth="735.0">
+                    <children>
+                        <Label text="Il s'agit d'un mini projet avec JavaFx" textFill="#1e1d1d">
+                            <font>
+                                <Font size="19.0"/>
+                            </font>
+                        </Label>
+                        <Label text="permettant de gérer une bibliothèque :" textFill="#1b1a1a">
+                            <font>
+                                <Font size="19.0"/>
+                            </font>
+                        </Label>
+                        <Label text="les livres, et les adhérents" textFill="#111111">
+                            <font>
+                                <Font size="19.0"/>
+                            </font>
+                        </Label>
+                        <Label text="ainsi ques les différents emprunts" textFill="#1b1a1a">
+                            <font>
+                                <Font size="19.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="98.0" prefWidth="732.0" spacing="20.0">
+            <children>
+                <ImageView fitHeight="73.0" fitWidth="50.0" onMouseClicked="#goFacebook" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../img/facebook%20(1).png"/>
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="DEFAULT"/>
+                    </cursor>
+                </ImageView>
+                <ImageView fitHeight="73.0" fitWidth="50.0" onMouseClicked="#goGithub" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../img/github.png"/>
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="73.0" fitWidth="50.0" onMouseClicked="#goTwitter" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../img/twitter.png"/>
+                    </image>
+                </ImageView>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="45.0" prefWidth="732.0">
+            <children>
+                <Label text="Réalisé par AKHADM Ayoub">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox alignment="BOTTOM_CENTER" prefHeight="109.0" prefWidth="732.0">
+            <children>
+                <Label text="Copyright 2O20 ALL RIGHTS RESERVED TO AKHADAM AYOUB">
+                    <font>
+                        <Font size="14.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+</VBox>

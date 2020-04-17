@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="606.0" prefWidth="827.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.SystemController">
+    <children>
+        <HBox prefHeight="12.0" prefWidth="778.0" style="-fx-background-color: #356577;;" styleClass="menuBar">
+            <children>
+                <HBox alignment="CENTER" prefHeight="31.0" prefWidth="373.0">
+                    <children>
+                        <Label contentDisplay="CENTER" prefHeight="31.0" prefWidth="309.0"
+                               text="Library System Management" textFill="WHITE">
+                            <font>
+                                <Font size="15.0"/>
+                            </font>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </padding>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_RIGHT" prefHeight="54.0" prefWidth="585.0" spacing="3.0">
+                    <children>
+                        <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/sydney-opera-house.png"/>
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btnHome" mnemonicParsing="false" onAction="#handleButtonAction"
+                                style="-fx-background-color: #356577;" text="HOME" textFill="WHITE"/>
+                        <Separator opacity="0.21" orientation="VERTICAL" prefHeight="200.0"/>
+                        <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/alert.png"/>
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btnAbout" mnemonicParsing="false" onAction="#handleButtonAction"
+                                style="-fx-background-color: #356577;" text="ABOUT" textFill="WHITE"/>
+                        <Separator depthTest="ENABLE" opacity="0.21" orientation="VERTICAL" prefHeight="200.0"/>
+                        <ImageView fitHeight="20.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/logout.png"/>
+                            </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#signOut" prefHeight="25.0" prefWidth="72.0"
+                                style="-fx-background-color: #356577;" text="SIGN OUT" textFill="WHITE"/>
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+        <HBox prefHeight="89.0" prefWidth="827.0" spacing="10.0" style="-fx-background-color: #17C3FF;" styleClass="btn"
+              stylesheets="@../css/login.css">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <children>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="146.0" spacing="2.0">
+                    <children>
+                        <ImageView fitHeight="105.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/books.png"/>
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btnLivres" mnemonicParsing="false" onAction="#handleButtonAction"
+                                styleClass="btn" stylesheets="@../css/system.css" text="LIVRES" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                    </padding>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="153.0" prefWidth="165.4">
+                    <children>
+                        <ImageView fitHeight="105.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/man.png"/>
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btnAuteurs" mnemonicParsing="false" onAction="#handleButtonAction"
+                                styleClass="btn" stylesheets="@../css/system.css" text="AUTEURS" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="165.4">
+                    <children>
+                        <ImageView fitHeight="94.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/value.png"/>
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btnAdherents" mnemonicParsing="false" onAction="#handleButtonAction"
+                                prefHeight="32.0" prefWidth="93.0" styleClass="btn" stylesheets="@../css/system.css"
+                                text="ADEHENTS" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="165.4">
+                    <children>
+                        <ImageView fitHeight="91.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/test.png"/>
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btnEmprunts" mnemonicParsing="false" onAction="#handleButtonAction"
+                                styleClass="btn" stylesheets="@../css/system.css" text="EMPRUNTS" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="141.0" prefWidth="165.4">
+                    <children>
+                        <ImageView fitHeight="86.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/graphic.png"/>
+                            </image>
+                        </ImageView>
+                        <Button fx:id="btnStatistique" mnemonicParsing="false" onAction="#handleButtonAction"
+                                prefHeight="30.0" prefWidth="124.0" styleClass="btn" stylesheets="@../css/system.css"
+                                text="STATISTIQUES" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="14.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <HBox opacity="0.61" prefHeight="385.0" prefWidth="827.0" style="-fx-background-color: #FFF;">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <children>
+                <ImageView fitHeight="259.0" fitWidth="805.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../img/livres-taille-differente-etagere-fond-bleu-education-connaissance-lecture-theme-rentree-classes-livre-se-distingue-parmi-autres-croissance-confrontation-concept-developpement_78240-72.jpg"/>
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <HBox prefHeight="237.0" prefWidth="827.0" spacing="20.0" style="-fx-background-color: #FFF;">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="243.0" style="-fx-background-color: #F6867F;">
+                    <children>
+                        <VBox alignment="CENTER" prefHeight="121.0" prefWidth="90.0">
+                            <children>
+                                <ImageView fitHeight="82.0" fitWidth="82.0">
+                                    <image>
+                                        <Image url="@../img/books.png"/>
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="74.0" prefWidth="135.0">
+                            <children>
+                                <Label fx:id="livreLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0"
+                                       prefWidth="135.0" text="LIVRES" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="297.0" style="-fx-background-color: #7D15E0;">
+                    <children>
+                        <VBox alignment="CENTER" prefHeight="105.0" prefWidth="57.0">
+                            <children>
+                                <ImageView fitHeight="84.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/add.png"/>
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="74.0" prefWidth="150.0">
+                            <children>
+                                <Label fx:id="adherentLabel" alignment="CENTER" text="ADHERENTS" textAlignment="CENTER"
+                                       textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="245.0" style="-fx-background-color: #68F98B;">
+                    <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="87.0">
+                            <children>
+                                <ImageView fitHeight="75.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/man.png"/>
+                                    </image>
+                                </ImageView>
+                            </children>
+                            <HBox.margin>
+                                <Insets/>
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="100.0" prefWidth="134.0">
+                            <children>
+                                <Label fx:id="auteurLabel" text="AUTEURS" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+        </HBox>
+    </children>
+</VBox>

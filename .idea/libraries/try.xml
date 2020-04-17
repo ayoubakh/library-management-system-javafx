@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="try">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/try/commons-beanutils-1.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/try/commons-collections-3.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/try/commons-digester-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/try/commons-lang-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/try/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/try/jasperreports-6.3.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/try/jcommon-1.0.23.jar!/" />
+      <root url="file://$PROJECT_DIR$/lib/try" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/try" recursive="false" />
+  </library>
+</component>

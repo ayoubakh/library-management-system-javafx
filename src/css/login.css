@@ -1,0 +1,28 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.loginTitle{
+    -fx-font-size:22px;
+}
+.footer-text{
+    -fx-font-size:18px;
+
+}
+.use-text{
+    -fx-font-size:15px;
+
+}
+.field{
+    -fx-font-size:15px;
+
+}
+.btn-login{
+    -fx-background-color:  #549CBA;
+    -fx-text-fill: #fff;
+    -fx-background-radius: 5;
+    -fx-font-size: 20px;
+}

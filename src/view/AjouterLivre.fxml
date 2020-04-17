@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+      prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.AjouterLivreController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="335.0" style="-fx-background-color: orange;">
+            <children>
+                <Label fx:id="titreWindow" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0"
+                       prefWidth="234.0" text="AJOUTER UN LIVRE" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Label>
+                <ImageView fx:id="imageView" fitHeight="21.0" fitWidth="20.0" onMouseClicked="#close"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/close.png"/>
+                    </image>
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="55.0" right="5.0" top="5.0"/>
+                    </HBox.margin>
+                </ImageView>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+        </HBox>
+        <VBox prefHeight="584.0" prefWidth="335.0" style="-fx-background-color: #356577;">
+            <children>
+                <HBox alignment="CENTER" prefHeight="50.0" prefWidth="335.0" spacing="20.0">
+                    <children>
+                        <ImageView fitHeight="67.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/books.png"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                    </padding>
+                </HBox>
+                <Separator prefHeight="4.0" prefWidth="335.0"/>
+                <VBox prefHeight="269.0" prefWidth="305.0" spacing="10.0">
+                    <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </VBox.margin>
+                    <children>
+                        <Label style="-fx-text-fill: white;" text="ISBN"/>
+                        <TextField fx:id="isbnField" promptText="ISBN" style="-fx-background-color: white;"/>
+                        <Label style="-fx-text-fill: white;" text="TITRE"/>
+                        <TextField fx:id="titreField" promptText="TITRE" style="-fx-background-color: white;"/>
+                        <Label style="-fx-text-fill: white;" text="LANGUE"/>
+                        <TextField fx:id="langueField" promptText="LANGUE" style="-fx-background-color: white;"/>
+                        <Label style="-fx-text-fill: white;" text="NOMBRE D'EXEMPLAIRES"/>
+                        <TextField fx:id="nbExField" promptText="NOMBRE D'EXEMPLAIRES"
+                                   style="-fx-background-color: white;"/>
+                        <Label style="-fx-text-fill: white;" text="AUTEUR"/>
+                        <ComboBox fx:id="comboAuteur" prefHeight="25.0" prefWidth="305.0" promptText="AUTEUR"
+                                  style="-fx-background-color: WHITE;"/>
+                    </children>
+                </VBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                    <children>
+                        <Button fx:id="btnEnregistrer" mnemonicParsing="false" onAction="#inserer"
+                                style="-fx-background-color: #76E24F;" text="ENREGISTER"/>
+                        <Button mnemonicParsing="false" onAction="#vider" style="-fx-background-color: #F07171;"
+                                text="VIDER"/>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+        </VBox>
+    </children>
+</VBox>

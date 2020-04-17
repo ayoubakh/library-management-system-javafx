@@ -1,0 +1,10 @@
+.btn{
+-fx-background-radius: 10;
+-fx-background-color: #86E98F;
+
+}
+.table-view .column-header {
+    -fx-base: palegreen;
+}
+.searchLabel{
+-fx-background-radius: 10;}
