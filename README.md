@@ -1,6 +1,6 @@
-##Library System Mangement with javafx
+## Library System Mangement with javafx
 
-##Screenshots
+## Screenshots
 
 
 
