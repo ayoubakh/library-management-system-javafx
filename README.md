@@ -2,4 +2,4 @@
 
 <h1>Screenshots</h1>
 
-<div><img src="./screenshots/A.png></div>
+![alt text](https://github.com/AKH-cpu/library-system-management/blob/master/A.png?raw=true)
