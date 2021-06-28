@@ -1,4 +1,4 @@
-## Library System Mangement with javafx
+## Library Management System with JavaFX
 
 ## Screenshots
 
