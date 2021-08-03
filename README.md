@@ -1,5 +1,7 @@
 ## Library Management System with JavaFX
 
+Library Management System is a desktop application designed to help users maintain and organize an academic library. The application allows you to log in add, update, delete books and authors, follow the book borrowing and return process, search for books and authors...
+
 ## Screenshots
 
 
