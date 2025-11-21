@@ -100,7 +100,7 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="45.0" prefWidth="732.0">
             <children>
-                <Label text="Réalisé par AKHADM Ayoub">
+                <Label text="Réalisé par AKHADAM Ayoub">
                     <font>
                         <Font size="16.0"/>
                     </font>
