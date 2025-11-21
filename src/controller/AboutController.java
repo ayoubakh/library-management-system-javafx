@@ -35,17 +35,17 @@ public class AboutController {
 
     @FXML
     private void goFacebook() throws URISyntaxException, IOException {
-        Desktop.getDesktop().browse(new URI("https://www.facebook.com/ayoub.view248.fsoc"));
+        Desktop.getDesktop().browse(new URI(""));
     }
 
     @FXML
     private void goGithub() throws URISyntaxException, IOException {
-        Desktop.getDesktop().browse(new URI("https://github.com/AKHADAM/LibrarySystemMangement-javafx.git"));
+        Desktop.getDesktop().browse(new URI("https://github.com/ayoubakh/library-management-system-javafx"));
     }
 
     @FXML
     private void goTwitter() throws URISyntaxException, IOException {
-        Desktop.getDesktop().browse(new URI("https://www.twitter.com"));
+        Desktop.getDesktop().browse(new URI(""));
     }
 
 }
