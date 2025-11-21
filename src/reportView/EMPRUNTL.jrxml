@@ -71,6 +71,7 @@
     <parameter name="cinParam" class="java.lang.String">
         <defaultValueExpression><![CDATA[$P{cinParam}]]></defaultValueExpression>
     </parameter>
+    <parameter name="IMAGE_DIR" class="java.lang.String"/>
     <queryString language="SQL">
         <![CDATA[SELECT e.reference,e.dateEmprunt,e.dateRestitutionPrevu,a.cin,a.nom,a.prenom,l.isbn,l.titre,l.langue
 From emprunt e, adherent a, livre l
@@ -178,7 +179,7 @@ From emprunt e, adherent a, livre l
             <image hAlign="Center">
                 <reportElement x="0" y="0" width="65" height="60" uuid="94883631-a913-43e2-b182-ab8d77d0181e"/>
                 <imageExpression>
-                    <![CDATA["C:/Users/AKH/Desktop/VV/LibrarySystemManagement/src/img/bib.png"]]></imageExpression>
+                    <![CDATA[$P{IMAGE_DIR} + "/bib.png"]]></imageExpression>
             </image>
             <staticText>
                 <reportElement x="173" y="0" width="242" height="25" uuid="e622555d-198b-4ccd-a4a1-c59c53304058">
