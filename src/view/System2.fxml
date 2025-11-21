@@ -18,7 +18,7 @@
                 <HBox alignment="CENTER" prefHeight="31.0" prefWidth="373.0">
                     <children>
                         <Label contentDisplay="CENTER" prefHeight="31.0" prefWidth="309.0"
-                               text="Library System Management" textFill="WHITE">
+                               text="Library Management System" textFill="WHITE">
                             <font>
                                 <Font size="15.0"/>
                             </font>

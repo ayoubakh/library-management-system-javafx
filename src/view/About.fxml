@@ -34,7 +34,7 @@
         </HBox>
         <HBox alignment="TOP_RIGHT" prefHeight="21.0" prefWidth="732.0">
             <children>
-                <Label alignment="CENTER" prefHeight="17.0" prefWidth="765.0" text="Library System Management"
+                <Label alignment="CENTER" prefHeight="17.0" prefWidth="765.0" text="Library Management System"
                        textFill="#171717">
                     <font>
                         <Font name="Century Gothic" size="20.0"/>

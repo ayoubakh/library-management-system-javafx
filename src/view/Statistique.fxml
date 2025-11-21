@@ -23,7 +23,7 @@
                         <HBox alignment="CENTER" prefHeight="54.0" prefWidth="256.0">
                             <children>
                                 <Label contentDisplay="CENTER" prefHeight="31.0" prefWidth="302.0"
-                                       text="Library System Management" textFill="WHITE">
+                                       text="Library Management System" textFill="WHITE">
                                     <font>
                                         <Font size="14.0"/>
                                     </font>

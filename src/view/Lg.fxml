@@ -25,7 +25,7 @@
                         <Image url="@../img/bib.png"/>
                     </image>
                 </ImageView>
-                <Label text="Library System Management" textFill="#fffdfd">
+                <Label text="Library Management System" textFill="#fffdfd">
                     <font>
                         <Font size="26.0"/>
                     </font>
