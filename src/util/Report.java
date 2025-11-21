@@ -31,6 +31,7 @@ public class Report {
             HashMap parametres = new HashMap();
             parametres.put("cinParam", cinValue);
             parametres.put("isbnParam", isbnValue);
+            parametres.put("IMAGE_DIR", resolveImageDir());
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasper, parametres, connection);
             JasperViewer.viewReport(jasperPrint, false);
 
@@ -55,6 +56,7 @@ public class Report {
             JasperReport jasper = JasperCompileManager.compileReport(jasperDesign);
             JRDataSource dataSource = new JREmptyDataSource();
             HashMap parametres = new HashMap();
+            parametres.put("IMAGE_DIR", resolveImageDir());
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasper, parametres, connection);
             JasperViewer.viewReport(jasperPrint, false);
 
@@ -85,6 +87,10 @@ public class Report {
             dirFile.mkdirs();
         }
         return exportDir.resolve(fileName).toString();
+    }
+
+    private static String resolveImageDir() {
+        return Paths.get(System.getProperty("user.dir"), "src", "img").toString();
     }
 }
 

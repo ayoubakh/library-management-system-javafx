@@ -59,6 +59,7 @@
             <style backcolor="#D8D8D8"/>
         </conditionalStyle>
     </style>
+    <parameter name="IMAGE_DIR" class="java.lang.String"/>
     <subDataset name="tableDataset" uuid="f13e6d36-5148-4ecc-bbe3-3035def80980">
         <queryString>
             <![CDATA[]]>
@@ -124,7 +125,7 @@
             <image hAlign="Center">
                 <reportElement x="0" y="0" width="65" height="60" uuid="1ddaf4d7-b4d6-47c1-a317-3b51c35d3c03"/>
                 <imageExpression>
-                    <![CDATA["C:/Users/AKH/Desktop/VV/LibrarySystemManagement/src/img/bib.png"]]></imageExpression>
+                    <![CDATA[$P{IMAGE_DIR} + "/bib.png"]]></imageExpression>
             </image>
             <staticText>
                 <reportElement x="173" y="0" width="242" height="25" uuid="f9a7c521-8cbf-4d3e-baef-1fac58ee1aba">
